@@ -61,10 +61,23 @@ body {
 
 .left-nav {
   width: 190px;
-  background-color: #00b046;
   border: 0px;
   border-right: 2px solid;
   border-right-color: #006b46;
+}
+
+.left-nav-button {
+  background-color: #00b046;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+.left-nav-button a {
+  text-decoration: none;
+  color: #eeeeee;
+  font-size: 1.25em;
+  height: 25px;
+  line-height: 25px;
 }
 
 .main-body {

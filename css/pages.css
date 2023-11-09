@@ -1,29 +1,88 @@
 body {
-  width: 100%;
+  width: calc(100vw - 25px);
   height: 100%;
   border: 0;
   font-family: 'Tahoma, Serif';
   margin: 0px;
-  padding: 0px;
+  padding: 8px 0px 0px 8px;
+}
+
+h1 {
+  width: 100%;
+  color: #0093cc;
+  margin: 6px 0px;
+}
+
+button {
+  font-family: 'Tahoma, Serif';
+}
+
+.accordion {
+  background-color: #78c6e7;
+  color: #0075b1;
+  cursor: pointer;
+  padding: 9px;
+  width: 100%;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin-top: 6px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #0093cc;
+  color: #fff;
+}
+
+.accordion:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #0075b1;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+  color: #0075b1;
 }
 
 .seccion {
-	width: 100%;
-	padding-left: 30px;
-	display: flex;
-	flex-direction: column;
+  padding: 0px 9px;
+  background-color: white;
+  width: calc(100vw - 43px);
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
-.seccion-titulo {
-    color: red;
-    display: block;
-    width: 100%;
-    font-size: 20px;
-    border: 1px solid;
-    border-color: #000000;
-    padding: 4px 4px 4px 4px;
-
-}.pregunta {
+.pregunta {
+  margin-top: 8px;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #0093cc;
 }
+
 .respuesta {
+  padding: 0px 0px 0px 5px;
+}
+
+.respuesta p {
+  margin: 6px 0px;
+}
+
+.respuesta li {
+  list-style-type: " - ";
+}
+
+.subtitulo {
+  margin-top: 8px;
+  text-align: left;
+  font-size: 1.1em;
+  font-weight: bolder;
 }
