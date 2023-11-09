@@ -18,6 +18,18 @@ button {
   font-family: 'Tahoma, Serif';
 }
 
+table td {
+  border: 1px solid;
+  text-align: left;
+  padding: 0;
+}
+
+table th {
+  border: 1px solid;
+  text-align: left;
+  padding: 0;
+}
+
 .accordion {
   background-color: #78c6e7;
   color: #0075b1;
@@ -68,7 +80,6 @@ button {
   font-weight: bold;
   width: calc(100vw - 33px);
   color: #0093cc;
-  background-color: #ddd;
 }
 
 .respuesta {
@@ -89,4 +100,10 @@ button {
   text-align: left;
   font-size: 1.1em;
   font-weight: bolder;
+}
+
+.tabla {
+  text-align: center;
+  width: calc(100vw - 38px);
+  margin-top: 10px;
 }
