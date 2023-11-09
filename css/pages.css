@@ -107,3 +107,9 @@ table th {
   width: calc(100vw - 38px);
   margin-top: 10px;
 }
+
+.codigo {
+  padding: 8px;
+  margin: 8px;
+  background-color: #ddd;
+}
