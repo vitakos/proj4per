@@ -1,9 +1,10 @@
 body {
-  width: calc(100vw - 25px);
+  width: calc(100vw - 9px);
   height: 100%;
   border: 0;
   font-family: 'Tahoma, Serif';
   margin: 0px;
+  overflow: hidden;
   padding: 8px 0px 0px 8px;
 }
 
@@ -52,11 +53,11 @@ button {
 }
 
 .seccion {
-  padding: 0px 9px;
+  padding: 0px 0px 0px 7px;
+  width: calc(100vw - 15px);
   background-color: white;
-  width: calc(100vw - 43px);
   display: none;
-  overflow: hidden;
+  overflow: auto;
   transition: max-height 0.2s ease-out;
 }
 
@@ -65,11 +66,14 @@ button {
   text-align: left;
   font-size: 1.2em;
   font-weight: bold;
+  width: calc(100vw - 33px);
   color: #0093cc;
+  background-color: #ddd;
 }
 
 .respuesta {
   padding: 0px 0px 0px 5px;
+  width: calc(100vw - 38px);
 }
 
 .respuesta p {

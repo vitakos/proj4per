@@ -1,4 +1,5 @@
 var expanded = null;
+var selected = null;
 
 function accordionClick() {
   /* Toggle between adding and removing the "active" class,
@@ -18,11 +19,31 @@ function accordionClick() {
   }
 }
 
+function navButtonClick() {
+  if (selected) {
+    selected.click();
+  }
+
+  this.classList.toggle("active");
+  selected = this;
+}
+
+function deselect() {
+  if (selected) {
+    selected.click();
+    selected = null;
+  }
+}
+
 function setAccordion() {
   var acc = document.getElementsByClassName("accordion");
   var i;
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", accordionClick);
+  }
+  var navButtons = document.getElementsByClassName("left-nav-button");
+  for (i = 0; i < navButtons.length; i++) {
+    navButtons[i].addEventListener("click", navButtonClick);
   }
 }
 
